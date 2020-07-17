@@ -32,7 +32,6 @@ body{
     z-index: 3;
     position: relative;
 
-
 }
 .page-nav-list>li>a:nth-child(1):hover {
 
@@ -44,7 +43,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
+
 
 
 .logo{
