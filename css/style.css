@@ -303,3 +303,74 @@ body{
     height: 40px;
     margin-left: 51px;
 }
+.contact {
+    height: 707px;
+    width: 1716px;
+}
+.contact-container {
+    height: 112px;
+    width: 100%;
+}
+.contact-title {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 95px;
+    padding-bottom: 35px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #000000;
+
+}
+.contact-title::before {
+    content: "------";
+    letter-spacing: -5px;
+    padding: 10px;
+    color: red;
+    text-shadow: 0 1px 6px rgba(255, 0, 0, 0.3);
+
+}
+
+.contact-title::after {
+    content: "------";
+    letter-spacing: -5px;
+    padding: 10px;
+    color: red;
+    text-shadow: 0 1px 6px rgba(255, 0, 0, 0.3);
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-img{
+    padding-left: 437px;
+}
+.contact-photo{
+    width: 414px;
+    height: 316px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-label{
+    padding-right: 404px;
+}
+.form-label>input{
+    width: 444px;
+    height: 38px;
+}
+.form-label>textarea{
+    width: 444px;
+    height: 140px;
+}
+.checkbox{
+    padding-right: 380px;
+    padding-left: 10px;
+
+}
