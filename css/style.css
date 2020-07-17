@@ -8,20 +8,35 @@ body{
 
 .container{
     background: url("../images/Image.jpg") center/cover;
-    width: 1366px;
-    height: 807px;
+    width: 1716px;
+    height: 100vh;
+    position: relative;
+
 
 }
-.container::after{
+.container::before{
+    height: 100%;
+    width: 100%;
     background: black center/cover;
     opacity: 0.5;
     content: " ";
+    position:absolute;
+    z-index: 0;
 }
 .main-container{
     height: 90px;
     width: 1366px;
     display: flex;
     justify-content: center;
+    border-bottom: 2px solid #FFFFFF33;
+    z-index: 3;
+    position: relative;
+
+
+}
+.page-nav-list>li>a:nth-child(1):hover {
+
+    background: rgba(255, 255, 255, 0.2);
 }
 .nav{
     height: 90px;
@@ -30,6 +45,8 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+
 .logo{
     display: flex;
     justify-content: center;
@@ -47,25 +64,37 @@ body{
     font-weight: bold;
     color: #FFFFFF;
 }
+.page-nav{
+    width: 486px;
+    height: 88px;
+}
+
 .page-nav-list{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+
+
 }
 .page-nav-list>li>a{
     color: #FFFFFF;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-    margin-left: 80px;
+    padding:40px;
+
 }
 .article{
-    height: 717px;
+    height: 1015px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
+    z-index: 3;
+    position: relative;
 
 }
 .article-title{
@@ -102,5 +131,12 @@ body{
     background: #FFFFFF 0% 0% no-repeat padding-box;
     color: #FF0000;
 
-
+}
+.selection{
+    position: absolute;
+    background: red url("../images/Icon Arrow Down.svg") center no-repeat;
+    width: 55px;
+    height: 55px;
+    bottom: -27px;
+    border-radius: 50%;
 }
